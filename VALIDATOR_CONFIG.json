@@ -1,0 +1,356 @@
+{
+  "version": "6.0-reference-taste-loop",
+  "thresholds": {
+    "slop_max_exclusive": 6,
+    "premium_min_inclusive": 15
+  },
+  "token_contract_minimums": {
+    "color_roles": 5,
+    "color_values": 3,
+    "spacing_values": 5,
+    "type_values": 5,
+    "radius_values": 3,
+    "shadow_levels_or_no_shadow_policy": 2
+  },
+  "component_rules_minimums": {
+    "state_terms": 5,
+    "accessibility_terms": 3,
+    "usage_markers": 4
+  },
+  "allowed_final_statuses": [
+    "PASS_EXTERNALLY_VALIDATED",
+    "FAIL_REVISE_REQUIRED",
+    "BLOCKED_SCREENSHOT_UNAVAILABLE",
+    "SPEC_COMPLETE_UNVERIFIED",
+    "DRAFT_SELF_SCORE_ONLY"
+  ],
+  "required_final_status_for_deploy": "PASS_EXTERNALLY_VALIDATED",
+  "vibe_words": [
+    "premium",
+    "modern",
+    "clean",
+    "beautiful",
+    "polished",
+    "sleek"
+  ],
+  "mechanism_words": [
+    "spacing",
+    "hierarchy",
+    "typography",
+    "contrast",
+    "radius",
+    "shadow",
+    "token",
+    "component",
+    "line-height",
+    "line height",
+    "max-width",
+    "grid",
+    "alignment",
+    "semantic",
+    "state",
+    "focus",
+    "accessibility",
+    "mobile",
+    "rtl",
+    "color role",
+    "line length",
+    "touch target",
+    "density",
+    "scale",
+    "elevation",
+    "border",
+    "motion"
+  ],
+  "vibe_check_exempt_paths": [
+    "project-state/PREMIUM_DEFINITION.md",
+    "PREMIUM_VS_SLOP.md",
+    "SCORECARDS.md",
+    "DESIGN_BRAIN.md"
+  ],
+  "allowed_px_values": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    56,
+    64,
+    72,
+    80,
+    96,
+    112,
+    128,
+    144,
+    160
+  ],
+  "banned_copy": [
+    "unlock your potential",
+    "seamless journey",
+    "transform your wellness",
+    "ai-powered personalized journey",
+    "get started",
+    "learn more"
+  ],
+  "implementation_token_file_markers": [
+    "token",
+    "theme",
+    "variables",
+    "tailwind.config",
+    "design-system"
+  ],
+  "design_brain_rules": {
+    "body_line_height_min": 1.3,
+    "body_line_height_max": 1.9,
+    "line_height_hard_floor": 1.15,
+    "touch_target_min_px": 44,
+    "shadow_blur_to_offset_max_ratio": 5,
+    "require_prose_line_length_constraint": true
+  },
+  "screenshot_artifacts": {
+    "dir": "screenshots",
+    "required_states": [
+      "desktop",
+      "mobile"
+    ],
+    "min_width": 320,
+    "min_height": 320
+  },
+  "reference_dna_provenance": {
+    "required": false,
+    "min_source_urls": 1,
+    "signature_markers": [
+      "studied:",
+      "study signature",
+      "extraction-source",
+      "source-hash",
+      "fetched-at"
+    ]
+  },
+  "blind_review_provenance": {
+    "required": false,
+    "markers": [
+      "reviewer-session:",
+      "transcript-hash:",
+      "reviewer-initials:",
+      "reviewed-at:"
+    ]
+  },
+  "extraction_degraded_flag": "project-state/EXTRACTION_DEGRADED.md",
+  "extraction_degraded_premium_cap": 14,
+  "grilling_coverage": {
+    "required": false,
+    "axes": {
+      "feel": [
+        "feel",
+        "three words",
+        "mood",
+        "tone",
+        "emotion"
+      ],
+      "anti_feel": [
+        "not feel",
+        "avoid",
+        "anti-target",
+        "hate",
+        "cringe",
+        "cheap",
+        "fake"
+      ],
+      "layout": [
+        "layout",
+        "spacious",
+        "editorial",
+        "compact",
+        "grid",
+        "density",
+        "boxed",
+        "asymmetric"
+      ],
+      "typography": [
+        "type",
+        "font",
+        "serif",
+        "sans",
+        "headline",
+        "heading",
+        "typeface"
+      ],
+      "color": [
+        "color",
+        "colour",
+        "accent",
+        "neutral",
+        "palette",
+        "monochrome",
+        "pastel"
+      ],
+      "key_component": [
+        "hero",
+        "chatbot",
+        "chat",
+        "form",
+        "card",
+        "profile",
+        "matching",
+        "dashboard",
+        "gallery",
+        "calendar",
+        "checkout"
+      ],
+      "interaction": [
+        "motion",
+        "interaction",
+        "hover",
+        "animation",
+        "guided",
+        "explore",
+        "step-by-step",
+        "conversational"
+      ],
+      "rtl": [
+        "rtl",
+        "hebrew",
+        "arabic",
+        "right-to-left",
+        "mirror",
+        "bidi"
+      ]
+    },
+    "min_references_with_liked": 2,
+    "reference_liked_markers": [
+      "liked:",
+      "likes:",
+      "borrow:",
+      "one thing:",
+      "what i like",
+      "keep:"
+    ]
+  },
+  "extraction_tool": {
+    "required": false,
+    "record_file": "project-state/EXTRACTION_TOOL.md",
+    "accepted_tools": [
+      "playwright",
+      "hallmark",
+      "design-extract",
+      "puppeteer",
+      "study",
+      "webfetch"
+    ],
+    "manual_markers": [
+      "manual only",
+      "eyeball",
+      "by eye",
+      "guessed",
+      "no tool",
+      "none set up"
+    ]
+  },
+  "organizing_idea": {
+    "required": false,
+    "file": "project-state/ORGANIZING_IDEA.md",
+    "min_words": 10
+  },
+  "real_content": {
+    "required": false,
+    "file": "project-state/REAL_CONTENT.md",
+    "min_words": 25
+  },
+  "reference_shots": {
+    "required": false,
+    "dir": "screenshots/refs",
+    "min_count": 1,
+    "hard_fail": true
+  },
+  "restraint": {
+    "max_colors": 10,
+    "max_font_families": 2,
+    "max_font_weights": 3
+  },
+  "variant_gate": {
+    "required": false,
+    "file": "project-state/VARIANT_BOARD.md",
+    "min_variants": 3,
+    "min_words": 120,
+    "distinctiveness_markers": [
+      "distinctive",
+      "non-median",
+      "presence",
+      "visual thesis",
+      "memorable",
+      "not averaged away"
+    ]
+  },
+  "human_taste_gate": {
+    "required": false,
+    "file": "project-state/HUMAN_TASTE_SELECTION.md",
+    "approved_statuses": [
+      "APPROVED",
+      "APPROVED_WITH_NOTES"
+    ],
+    "rejected_statuses": [
+      "REJECTED",
+      "NEEDS_MORE_VARIANTS",
+      "DRAFT_PENDING_HUMAN",
+      "PENDING"
+    ],
+    "selection_markers": [
+      "selected variant",
+      "presence",
+      "distinctiveness",
+      "visual thesis"
+    ]
+  },
+  "reference_match_gate": {
+    "required": false,
+    "file": "project-state/VISUAL_REFERENCE_MATCH_REPORT.md",
+    "minimum_score": 4,
+    "minimum_average_score": 4.1,
+    "provenance_markers": [
+      "vision-model:",
+      "vlm-command:",
+      "human-reference-reviewer:",
+      "reviewer-session:",
+      "transcript-hash:",
+      "reviewed-at:",
+      "reference-screenshot"
+    ]
+  },
+  "visual_score_categories": [
+    "hierarchy",
+    "spacing",
+    "typography",
+    "alignment",
+    "density",
+    "colorDiscipline",
+    "componentConsistency",
+    "mobileBehavior",
+    "interactionClarity",
+    "accessibility",
+    "rtlSafety",
+    "productionRealism",
+    "presence",
+    "distinctiveness",
+    "visualThesis",
+    "compositionStrength",
+    "memorability",
+    "brandCoherence"
+  ],
+  "minimumVisualScore": 0,
+  "minimumAverageScore": 0
+}

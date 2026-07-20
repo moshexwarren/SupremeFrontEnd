@@ -1,0 +1,21 @@
+name: AI Slop Frontend Validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate-ui-discipline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run AI-slop front-end validator
+        run: |
+          python3 path/to/skill/scripts/validate_skill_state.py \
+            --root path/to/skill \
+            --implementation src \
+            --require-final-pass

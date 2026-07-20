@@ -1,0 +1,15 @@
+{
+  "name": "supreme-front-end",
+  "version": "6.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "capture:screens": "node scripts/capture-screenshots.mjs",
+    "score:reference": "node scripts/score-reference-match.mjs",
+    "validate": "python3 scripts/validate_skill_state.py --root .",
+    "validate:final": "python3 scripts/validate_skill_state.py --root . --require-final-pass"
+  },
+  "optionalDependencies": {
+    "@playwright/test": "latest"
+  }
+}

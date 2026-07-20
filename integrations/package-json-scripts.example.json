@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "ai-slop:validate": "python3 path/to/skill/scripts/validate_skill_state.py --root path/to/skill --implementation src",
+    "ai-slop:validate:deploy": "python3 path/to/skill/scripts/validate_skill_state.py --root path/to/skill --implementation src --require-final-pass",
+    "predeploy": "npm run ai-slop:validate:deploy"
+  }
+}

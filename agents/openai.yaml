@@ -1,0 +1,4 @@
+interface:
+  display_name: "SupremeFrontEnd"
+  short_description: "Distinctive frontends with human-guided validation"
+  default_prompt: "Use $supreme-front-end to develop and validate a distinctive frontend direction for this project."
