@@ -27,6 +27,10 @@ from dataclasses import dataclass, asdict
 from pathlib import Path
 from typing import Iterable, Any
 
+for stream in (sys.stdout, sys.stderr):
+    if hasattr(stream, "reconfigure"):
+        stream.reconfigure(encoding="utf-8", errors="replace")
+
 DEFAULT_CONFIG: dict[str, Any] = {
     "thresholds": {"slop_max_exclusive": 6, "premium_min_inclusive": 15},
     "token_contract_minimums": {
